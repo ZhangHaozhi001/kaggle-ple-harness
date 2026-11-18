@@ -1,0 +1,51 @@
+{
+  "id": "beam-001",
+  "title": "Cantilever beam end deflection and bending stress",
+  "source": "self-made",
+  "solver": "beam_deflection",
+  "prompt": "A cantilever beam of length 1.8 m carries a 1200 N point load at its free end. Young's modulus is 200 GPa, the second moment of area is 8.5e-7 m^4, and the distance from the neutral axis to the outer fibre is 0.045 m. Find the end deflection and the maximum bending stress.",
+  "inputs": {
+    "force": {
+      "value": 1200,
+      "unit": "N"
+    },
+    "length": {
+      "value": 1.8,
+      "unit": "m"
+    },
+    "youngs_modulus": {
+      "value": 200000000000.0,
+      "unit": "Pa"
+    },
+    "second_moment": {
+      "value": 8.5e-07,
+      "unit": "m^4"
+    },
+    "half_depth": {
+      "value": 0.045,
+      "unit": "m"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "max_deflection",
+      "unit": "mm",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "max_stress",
+      "unit": "MPa",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "max_deflection": {
+      "value": 13.722352941176473,
+      "unit": "mm"
+    },
+    "max_stress": {
+      "value": 114.3529411764706,
+      "unit": "MPa"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "pipe-001",
+  "title": "Darcy-Weisbach pressure drop in a water pipe",
+  "source": "self-made",
+  "solver": "pipe_pressure_drop",
+  "prompt": "Water (density 998 kg/m^3) flows at 0.035 m^3/s through a 250 m pipe of diameter 0.15 m. The Darcy friction factor is 0.02. Find the mean velocity and the frictional pressure drop.",
+  "inputs": {
+    "friction_factor": {
+      "value": 0.02,
+      "unit": "1"
+    },
+    "length": {
+      "value": 250,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.15,
+      "unit": "m"
+    },
+    "density": {
+      "value": 998,
+      "unit": "kg/m^3"
+    },
+    "flow_rate": {
+      "value": 0.035,
+      "unit": "m^3/s"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "mean_velocity",
+      "unit": "m/s",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "pressure_drop",
+      "unit": "kPa",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "mean_velocity": {
+      "value": 1.9805948473658088,
+      "unit": "m/s"
+    },
+    "pressure_drop": {
+      "value": 65.24850729188614,
+      "unit": "kPa"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "proj-001",
+  "title": "Projectile range, apex and flight time",
+  "source": "self-made",
+  "solver": "projectile",
+  "prompt": "A projectile is launched at 45 m/s at 35 degrees above the horizontal over flat ground (g = 9.81 m/s^2, no drag). Find the range, the maximum height and the flight time.",
+  "inputs": {
+    "speed": {
+      "value": 45,
+      "unit": "m/s"
+    },
+    "angle": {
+      "value": 35,
+      "unit": "deg"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "range",
+      "unit": "m",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "max_height",
+      "unit": "m",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "flight_time",
+      "unit": "s",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "range": {
+      "value": 193.9732474099352,
+      "unit": "m"
+    },
+    "max_height": {
+      "value": 33.95538251186342,
+      "unit": "m"
+    },
+    "flight_time": {
+      "value": 5.262169140835285,
+      "unit": "s"
+    }
+  }
+}

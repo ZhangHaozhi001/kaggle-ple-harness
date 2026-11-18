@@ -1,0 +1,43 @@
+{
+  "id": "carnot-001",
+  "title": "Carnot efficiency with Celsius temperatures (unit trap)",
+  "source": "self-made",
+  "solver": "carnot_efficiency",
+  "prompt": "A Carnot engine operates between a hot reservoir at 500 degC and a cold reservoir at 25 degC, receiving 120 kW of heat. Find the thermal efficiency and the work output.",
+  "inputs": {
+    "hot_temp": {
+      "value": 500,
+      "unit": "degC"
+    },
+    "cold_temp": {
+      "value": 25,
+      "unit": "degC"
+    },
+    "heat_input": {
+      "value": 120,
+      "unit": "kW"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "efficiency",
+      "unit": "1",
+      "rel_tol": 0.01
+    },
+    {
+      "name": "work_output",
+      "unit": "kW",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "efficiency": {
+      "value": 0.6143697859406325,
+      "unit": "1"
+    },
+    "work_output": {
+      "value": 73.72437431287591,
+      "unit": "kW"
+    }
+  }
+}

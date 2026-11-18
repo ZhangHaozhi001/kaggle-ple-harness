@@ -1,0 +1,43 @@
+{
+  "id": "rc-001",
+  "title": "RC time constant (ms trap) and capacitor energy",
+  "source": "self-made",
+  "solver": "rc_circuit",
+  "prompt": "A 4.7 kohm resistor is in series with a 22 uF capacitor charged to 12 V. Find the time constant (in milliseconds) and the energy stored in the capacitor.",
+  "inputs": {
+    "resistance": {
+      "value": 4.7,
+      "unit": "kohm"
+    },
+    "capacitance": {
+      "value": 22,
+      "unit": "uF"
+    },
+    "voltage": {
+      "value": 12,
+      "unit": "V"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "time_constant",
+      "unit": "ms",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "stored_energy",
+      "unit": "J",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "time_constant": {
+      "value": 103.39999999999999,
+      "unit": "ms"
+    },
+    "stored_energy": {
+      "value": 0.001584,
+      "unit": "J"
+    }
+  }
+}

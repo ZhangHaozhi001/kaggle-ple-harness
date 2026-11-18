@@ -1,0 +1,43 @@
+{
+  "id": "hydro-001",
+  "title": "Hydrostatic load on a vertical dam face",
+  "source": "self-made",
+  "solver": "hydrostatic_force",
+  "prompt": "A vertical dam face is 40 m wide and holds back water 6 m deep (density 1000 kg/m^3, g = 9.81 m/s^2). Find the gauge pressure at the bottom and the total hydrostatic force on the face.",
+  "inputs": {
+    "density": {
+      "value": 1000,
+      "unit": "kg/m^3"
+    },
+    "depth": {
+      "value": 6,
+      "unit": "m"
+    },
+    "width": {
+      "value": 40,
+      "unit": "m"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "bottom_pressure",
+      "unit": "kPa",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "total_force",
+      "unit": "kN",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "bottom_pressure": {
+      "value": 58.86,
+      "unit": "kPa"
+    },
+    "total_force": {
+      "value": 7063.2,
+      "unit": "kN"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "heat-001",
+  "title": "Steady conduction through a flat wall",
+  "source": "self-made",
+  "solver": "heat_conduction",
+  "prompt": "A flat wall of area 12 m^2 and thickness 0.25 m has thermal conductivity 0.8 W/(m K). The hot face is at 85 degC and the cold face at 20 degC. Find the steady heat transfer rate and the heat flux.",
+  "inputs": {
+    "conductivity": {
+      "value": 0.8,
+      "unit": "W/(m K)"
+    },
+    "area": {
+      "value": 12,
+      "unit": "m^2"
+    },
+    "thickness": {
+      "value": 0.25,
+      "unit": "m"
+    },
+    "temp_hot": {
+      "value": 85,
+      "unit": "degC"
+    },
+    "temp_cold": {
+      "value": 20,
+      "unit": "degC"
+    }
+  },
+  "required_outputs": [
+    {
+      "name": "heat_rate",
+      "unit": "W",
+      "rel_tol": 0.02
+    },
+    {
+      "name": "heat_flux",
+      "unit": "W/m^2",
+      "rel_tol": 0.02
+    }
+  ],
+  "reference": {
+    "heat_rate": {
+      "value": 2496.0000000000005,
+      "unit": "W"
+    },
+    "heat_flux": {
+      "value": 208.00000000000003,
+      "unit": "W/m^2"
+    }
+  }
+}
